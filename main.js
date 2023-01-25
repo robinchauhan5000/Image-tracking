@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // // Render the scene
     // renderer.render(scene, camera);
 
-    raccoon.scene.scale.set(0.8, 0.8, 0.8);
+    raccoon.scene.scale.set(1, 1, 1);
     raccoon.scene.position.set(0, 0.2, 0.15);
     raccoon.scene.rotation.set(0, 4.75, 30);
 
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(raccoon.scene);
 
-    const audioClip = await loadAudio("./assets/oursound.mp3");
+    const audioClip = await loadAudio("./assets/sound.mp3");
 
     const listener = new THREE.AudioListener();
     camera.add(listener);
